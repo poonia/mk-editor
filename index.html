@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Markdown Editor</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+	<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+	<style>
+		.container {
+			width: 90%;
+			margin: 0 auto;
+			padding-top: 20px;
+		}
+
+		.CodeMirror {
+			height: 70vh;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Lorem ipsum dolor sit amet</h1>
+			<p>consectetur adipisicing elit. In veritatis, sint accusamus aspernatur maiores provident doloremque dolorum fugiat debitis dolores, explicabo, libero architecto voluptas officiis sequi iusto. Doloribus, quo, eveniet.</p>
+
+		</header>
+		<form action="">
+			<textarea name="my-smde" id="my-smde"># Intro
+Go ahead, play around with the editor! Be sure to check out **bold** and *italic* styling, or even [links](https://google.com). You can type the Markdown syntax, use the toolbar, or use shortcuts like `cmd-b` or `ctrl-b`.
+
+			</textarea>
+		</form>
+
+	</div>
+
+	<script>
+	new SimpleMDE({
+			element: document.getElementById("my-smde"),
+			spellChecker: false,
+		});
+	</script>
+</body>
+</html>
